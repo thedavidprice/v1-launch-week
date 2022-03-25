@@ -1,8 +1,6 @@
-# Redwood
-## Getting Started
-- [Tutorial](https://redwoodjs.com/docs/tutorial): getting started and complete overview guide.
-- [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
-- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
+# Redwood V1 Launch Week
+
+Website for Redwood V1 Launch Week. Built with RedwoodJS (of course).
 
 ### Setup
 
@@ -17,5 +15,3 @@ yarn install
 ```terminal
 yarn redwood dev
 ```
-
-Your browser should open automatically to `http://localhost:8910` to see the web app. Server functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
