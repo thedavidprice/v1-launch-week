@@ -52,7 +52,7 @@ const Event = ({ event }) => (
       )}
       {event.action && (
         <div>
-          <a href={event.url} target="_blank" rel="noreferrer">
+          <a href={event.action.url} target="_blank" rel="noreferrer">
             <button className="bg-green-500 hover:bg-green-400 py-2 px-8 mt-4 rounded-md  text-black font-semibold text-sm">
               {event.action.label}
             </button>

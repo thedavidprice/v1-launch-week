@@ -10,7 +10,7 @@ const IndexPage = () => {
         description="RedwoodJS v1.0 launch week is here!"
       />
       <Header />
-      <div className="p-12">
+      <div className="p-12 max-w-3xl m-auto">
         <Overview />
         <Calendar />
       </div>
@@ -19,13 +19,13 @@ const IndexPage = () => {
 }
 
 const Overview = () => (
-  <>
+  <div>
     <p className="font-bold mb-4">On April 4th, RedwoodJS goes 1.0!</p>
     <p className="text-justify">
       We will be celebrating all week with a series of announcements and events
       all around the Redwood ecosystem.
     </p>
-  </>
+  </div>
 )
 
 export default IndexPage

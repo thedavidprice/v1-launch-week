@@ -21,7 +21,7 @@ export const Schedule: Day[] = [
           'Come watch as twelve startups, all built with RedwoodJS, show off their products and share their experiences.',
         action: {
           label: 'RSVP',
-          url: 'https://www.redwoodjs.com/startups',
+          url: 'https://lu.ma/fh8ejd3j',
         },
       },
     ],
