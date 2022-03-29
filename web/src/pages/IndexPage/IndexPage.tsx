@@ -32,9 +32,9 @@ const Overview = () => (
     </div>
 
     <h3>
-      From Monday April 4th through Thursday April 7th, we celebrate the release
-      of 1.0.0 with a series of announcements and events from around the Redwood
-      ecosystem.
+      From Monday April 4th through Thursday April 7th, we will celebrate the
+      release of 1.0.0 with a series of announcements and events from around the
+      Redwood ecosystem.
       <br />
       <br />
       It all leads up to a <span className="font-bold">BIG</span> announcement
@@ -65,13 +65,17 @@ const Overview = () => (
 )
 
 const CTA = () => (
-  <div className="pt-4 text-center mx-auto max-w-md border-t-2 border-gray-900">
-    <div className="text-xl pb-8">Ready to start your RedwoodJS adventure?</div>
-    <a href="https://redwoodjs.com/docs/quick-start">
-      <button className="bg-redwood-red  text-white text-xl font-bold py-4 px-8 rounded">
-        Get Started
-      </button>
-    </a>
+  <div className="mt-36">
+    <div className="pt-4 text-center mx-auto max-w-md border-t-2 border-gray-900">
+      <div className="text-xl pb-8">
+        Ready to start your RedwoodJS adventure?
+      </div>
+      <a href="https://redwoodjs.com/tutorial">
+        <button className="bg-orange-500 hover:bg-orange-400  text-white text-xl font-bold py-4 px-8 rounded">
+          Start the Tutorial
+        </button>
+      </a>
+    </div>
   </div>
 )
 
