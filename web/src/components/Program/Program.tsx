@@ -4,21 +4,22 @@ const Program = () => {
   return (
     <div>
       <div className="w-12 h-12"></div>
-      {Schedule.map((launchDay) => (
-        <Day
-          key={launchDay.day}
-          date={launchDay.date}
-          events={launchDay.events}
-        />
+      {Schedule.map((day) => (
+        <Day key={day.ordinal} day={day} events={day.events} />
       ))}
     </div>
   )
 }
 
-const Day = ({ date, events }) => (
+const Day = ({ day, events }) => (
   <div className="mb-12">
     <div className="pb-0 pt-4 border-t-8 border-gray-200 w-24 h-2">&nbsp;</div>
-    <h2 className="font-bold text-2xl text-gray-200">{toLocalDate(date)}</h2>
+    <h2 className="font-bold text-2xl text-gray-200">
+      {toLocalDate(day.date)}
+    </h2>
+    {day.description && (
+      <div className="text-gray-200 mt-4">{day.description}</div>
+    )}
     {events.map((event) => (
       <Event key={event.time} event={event} />
     ))}

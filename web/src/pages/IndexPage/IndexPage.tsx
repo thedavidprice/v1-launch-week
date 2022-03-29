@@ -52,11 +52,8 @@ const Overview = () => (
       &quot;RSVP&quot;s below.
       <br />
       Dates and times below shown in your{' '}
-      <span
-        className="underline decoration-dashed"
-        title={Intl.DateTimeFormat().resolvedOptions().timeZone}
-      >
-        local time zone
+      <span>
+        local time zone ({Intl.DateTimeFormat().resolvedOptions().timeZone})
       </span>
       .
     </p>

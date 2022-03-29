@@ -1,6 +1,6 @@
 export const Schedule: Day[] = [
   {
-    day: 1,
+    ordinal: 1,
     date: new Date(Date.UTC(2022, 3, 4, 15)),
     events: [
       {
@@ -50,7 +50,7 @@ export const Schedule: Day[] = [
     ],
   },
   {
-    day: 2,
+    ordinal: 2,
     date: new Date(Date.UTC(2022, 3, 5, 16)),
     events: [
       {
@@ -75,34 +75,30 @@ export const Schedule: Day[] = [
     ],
   },
   {
-    day: 3,
+    ordinal: 3,
     date: new Date(Date.UTC(2022, 3, 6, 16)),
+    description: (
+      <>
+        <p className="mb-4">
+          Redwood has over 25 partner integrations covering deployment,
+          authentication, databases, and more. During these two Office Hour
+          sessions, we’ll sit down with representatives from many partner
+          companies. The format will be casual and intended for Q&amp;A and open
+          discussion.
+        </p>
+        <p>
+          Attending partners include Netlify, Prisma, Storybook, Render, Stripe,
+          Supabase, Auth0, Gitpod, and Planetscale
+          <span className="text-gray-500"> (subject to change)</span>.
+        </p>
+      </>
+    ),
     events: [
-      {
-        time: new Date(Date.UTC(2022, 3, 4, 15, 0)),
-        description: (
-          <>
-            <p className="mb-4">
-              Redwood has over 25 partner integrations covering deployment,
-              authentication, databases, and more. During these two Office Hour
-              sessions, we’ll sit down with representatives from many partner
-              companies. The format will be casual and intended for Q&amp;A and
-              open discussion.
-            </p>
-            <p>
-              Attending partners include Netlify, Prisma, Storybook, Render,
-              Stripe, Supabase, Auth0, Gitpod, and Planetscale
-              <span className="text-gray-500"> (subject to change)</span>.
-            </p>
-          </>
-        ),
-        title: '',
-      },
       {
         time: new Date(Date.UTC(2022, 3, 4, 15, 0)),
         endTime: new Date(Date.UTC(2022, 3, 4, 16, 30)),
         title: 'Partner Office Hours - Block 1',
-        description: 'Schedule will be posted soon',
+        description: 'Schedule will be posted soon.',
         action: {
           label: 'RSVP',
           url: 'https://lu.ma/2gxawl5t',
@@ -112,7 +108,7 @@ export const Schedule: Day[] = [
         time: new Date(Date.UTC(2022, 3, 4, 20, 0)),
         endTime: new Date(Date.UTC(2022, 3, 4, 21, 30)),
         title: 'Partner Office Hours - Block 2',
-        description: 'Schedule will be posted soon',
+        description: 'Schedule will be posted soon.',
         action: {
           label: 'RSVP',
           url: 'https://lu.ma/dz7zj5ca',
@@ -121,7 +117,7 @@ export const Schedule: Day[] = [
     ],
   },
   {
-    day: 4,
+    ordinal: 4,
     date: new Date(Date.UTC(2022, 3, 7, 16)),
     events: [
       {
@@ -152,9 +148,10 @@ export const Schedule: Day[] = [
 ]
 
 export type Day = {
-  day: number
+  ordinal: number
   date: Date
   events: Event[]
+  description?: React.ReactNode
 }
 
 export type Event = {
