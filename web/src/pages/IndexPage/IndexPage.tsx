@@ -63,11 +63,11 @@ const Overview = () => (
 const CTA = () => (
   <div className="pt-4 text-center mx-auto max-w-md border-t-2 border-gray-900">
     <div className="text-xl pb-8">Ready to start your RedwoodJS adventure?</div>
-    {/* <a href="https://redwoodjs.com/docs/quick-start">
-      <button className="bg-red-600 hover:bg-red-500 text-white text-xl font-bold py-4 px-8 rounded">
+    <a href="https://redwoodjs.com/docs/quick-start">
+      <button className="bg-redwood-red  text-white text-xl font-bold py-4 px-8 rounded">
         Get Started
       </button>
-    </a> */}
+    </a>
   </div>
 )
 
