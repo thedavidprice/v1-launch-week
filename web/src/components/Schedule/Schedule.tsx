@@ -31,8 +31,8 @@ const Calendar = () => {
 
 const Day = ({ date, events }) => (
   <div className="mb-12">
-    <div className="pb-0 pt-4 border-t-8 border-white w-24 h-2">&nbsp;</div>
-    <h2 className="font-bold text-2xl">{toLocalDate(date)}</h2>
+    <div className="pb-0 pt-4 border-t-8 border-gray-200 w-24 h-2">&nbsp;</div>
+    <h2 className="font-bold text-2xl text-gray-200">{toLocalDate(date)}</h2>
     {events.map((event) => (
       <Event key={event.time} event={event} />
     ))}
@@ -40,13 +40,19 @@ const Day = ({ date, events }) => (
 )
 
 const Event = ({ event }) => (
-  <div key={`${event.time}`} className="grid grid-cols-3 gap-4 py-4">
-    <div className="text-gray-300">
-      {toLocalTime(event.time)}
-      {event.endTime && ` − ${toLocalTime(event.endTime)}`}
-    </div>
+  <div key={`${event.time}`} className="grid grid-cols-6 gap-4 py-6">
     <div className="col-span-2">
-      <div className="font-semibold mb-2">{event.title}</div>
+      {toLocalTime(event.time)}
+      {event.endTime && (
+        <span>
+          {' '}
+          -<br />
+          {toLocalTime(event.endTime)}
+        </span>
+      )}
+    </div>
+    <div className="col-span-4">
+      <div className="font-bold text-xl mb-2">{event.title}</div>
       {event.description && (
         <div className="text-gray-300">{event.description}</div>
       )}
