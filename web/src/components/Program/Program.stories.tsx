@@ -1,7 +1,7 @@
-import Calendar from './Schedule'
+import Program from './Program'
 
 export const generated = () => {
-  return <Calendar />
+  return <Program />
 }
 
 export default { title: 'Components/Events' }

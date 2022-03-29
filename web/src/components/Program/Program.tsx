@@ -1,20 +1,6 @@
 import { Schedule } from 'src/data/Schedule'
 
-const toLocalDate = (date): string =>
-  date.toLocaleDateString(undefined, {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-
-const toLocalTime = (time): string =>
-  time.toLocaleTimeString(undefined, {
-    hour: 'numeric',
-    minute: 'numeric',
-  })
-
-const Calendar = () => {
+const Program = () => {
   return (
     <div>
       <div className="w-12 h-12"></div>
@@ -69,4 +55,18 @@ const Event = ({ event }) => (
   </div>
 )
 
-export default Calendar
+const toLocalDate = (date): string =>
+  date.toLocaleDateString(undefined, {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  })
+
+const toLocalTime = (time): string =>
+  time.toLocaleTimeString(undefined, {
+    hour: 'numeric',
+    minute: 'numeric',
+  })
+
+export default Program
