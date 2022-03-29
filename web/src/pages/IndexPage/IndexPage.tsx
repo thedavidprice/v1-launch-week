@@ -1,6 +1,7 @@
 import { MetaTags } from '@redwoodjs/web'
 import Program from 'src/components/Program/Program'
 import Header from 'src/components/Header/Header'
+import { SocialLinks } from 'src/components/SocialLinks'
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,9 @@ const IndexPage = () => {
         <Overview />
         <Program />
         <CTA />
+      </div>
+      <div>
+        <SocialLinks />
       </div>
     </>
   )
